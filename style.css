@@ -1,0 +1,163 @@
+body {
+    background:linear-gradient(to bottom, hsl(240, 40%, 25%), hsl(212, 60%, 31%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#firstH1 {
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 30px;
+    padding: 80px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-shadow: #0e4b90 0px 0px 10px;
+
+}
+
+#whyamipic {
+   display: block;
+   max-width: 50vh;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 0;
+   position: relative ;
+   z-index: -1;
+   transform: translateY(vh);
+
+
+}
+
+
+
+#startButton {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 60vh;
+    padding: 20px 30px;
+    font-size: 50px;
+    background-color: #279b2b;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Raleway", sans-serif;
+}
+
+#startButton:hover {
+    background-color: #54bd58;
+    scale: 1.1;
+}
+
+#startButton:active {
+    background-color: #97c392;
+    scale: 1.0;
+}
+
+#approvedButton {
+    flex: content;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px 30px;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    background-color: #3fcb67;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Raleway", sans-serif;
+}
+
+#deniedButton {
+    flex: content;
+    margin: 20px;
+    max-width: 300px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 30px;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    background-color: #e11f1f;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Raleway", sans-serif;
+}
+
+#buttonContainer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#approvedButton:hover , #deniedButton:hover{
+    scale: 1.05;
+    font-size: 3em;
+    padding-left: 0;
+    padding-right: 0;
+    
+
+}
+#approvedButton:active {
+
+}
+
+#deniedButton:active {
+    
+}
+
+#resetButton {
+    flex: content;
+    margin-left: 40px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background-color: #1f70e1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Raleway", sans-serif;
+
+}
+
+#turnBackButton {
+    flex: content;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background-color: #1f70e1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Raleway", sans-serif;
+
+}
+
+#buttonContainer2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#turnBackButton:hover ,#resetButton:hover{
+    scale: 1.05;
+    font-size: large;
+    font-weight: bold;
+}
