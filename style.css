@@ -34,12 +34,13 @@ body {
 
 #startButton {
     display: block;
+    width:min(80%, 380px); 
     margin: auto;
     margin-top: 10px;
     margin-bottom: 60vh;
     padding: 20px 30px;
     font-size: 50px;
-    background-color: #a8f0d4;    
+    background-color: #a8f0d4;  
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 10px;
