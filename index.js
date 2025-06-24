@@ -8,7 +8,7 @@ const turnBackButton = document.getElementById(`turnBackButton`)
 const firstH1 = document.getElementById(`firstH1`)
 
 resetButton.onclick = function(){
-   if (window.confirm("You are going the start point, are you sure about it?")) {
+   if (window.confirm("You are execute the start point, are you sure about it?")) {
 
     window.location.reload();
    }
@@ -108,44 +108,44 @@ function starting(){
     buttonContainer2.style.display = `block`;  
     approvedButton.onclick = function () {
         startButton.textContent = Q2;      // kullanıcı “Yes” dedi → Q2
-        going1();                           // şimdi ikinci seviye (Q2 → Q3/Q4) handler’larını kur
+        execute1();                           // şimdi ikinci seviye (Q2 → Q3/Q4) handler’larını kur
       };
       deniedButton.onclick = function () {
         startButton.textContent =  Q10 ;     // kullanıcı “No” dedi → Q10
-        going2();
+        execute2();
       };
     
 }
 
-function going1(){
+function execute1(){
     approvedButton.onclick = function () {
         startButton.textContent =  Q3 ;
-        going3 ();
+        execute3 ();
       };
       deniedButton.onclick = function () {
         startButton.textContent =  Q4 ;
-        going4();
+        execute4();
       };
     
     
 }
 
-function going2 (){
+function execute2 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q11 ;
-    going5();
+    execute5();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q15 ;
-    going6();
+    execute6();
   };
 
 }
 
-function going3 (){
+function execute3 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q3a ;
-    going7();
+    execute7();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  S1;
@@ -156,19 +156,19 @@ function going3 (){
 
 }
 
-function going4 (){
+function execute4 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q4a ;
-    going8();
+    execute8();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q5 ;
-    going9();
+    execute9();
   };
 
 }
 
-function going5 (){
+function execute5 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S15 ;
     buttonContainer.style.display =`none`;
@@ -177,24 +177,24 @@ function going5 (){
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q12 ;
-    going10();
+    execute10();
   };
 
 }
 
-function going6 (){
+function execute6 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q16 ;
-    going11();
+    execute11();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q18 ;
-    going12();
+    execute12();
   };
 
 }
 
-function going7 (){
+function execute7 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S2 ;
     buttonContainer.style.display =`none`;
@@ -203,12 +203,12 @@ function going7 (){
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q3b ;
-    going13();
+    execute13();
   };
 
 }
 
-function going8 (){
+function execute8 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S6 ;
     buttonContainer.style.display =`none`;
@@ -224,19 +224,19 @@ function going8 (){
 
 }
 
-function going9 (){
+function execute9 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q5a ;
-    going14();
+    execute14();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q6 ;
-    going15();
+    execute15();
   };
 
 }
 
-function going10 (){
+function execute10 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S16 ;
     buttonContainer.style.display =`none`;
@@ -245,12 +245,12 @@ function going10 (){
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q13 ;
-    going16();
+    execute16();
   };
 
 }
 
-function going11 (){
+function execute11 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S20 ;
     buttonContainer.style.display =`none`;
@@ -259,24 +259,24 @@ function going11 (){
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q17 ;
-    going17();
+    execute17();
   };
 
 }
 
-function going12 (){
+function execute12 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q19 ;
-    going18();
+    execute18();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q20 ;
-    going19();
+    execute19();
   };
 
 }
 
-function going13 (){
+function execute13 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S3 ;
     buttonContainer.style.display =`none`;
@@ -285,12 +285,12 @@ function going13 (){
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q3b ;
-    going20();
+    execute20();
   };
 
 }
 
-function going14 (){
+function execute14 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S7 ;
     buttonContainer.style.display =`none`;
@@ -306,22 +306,22 @@ function going14 (){
 
 }
 
-function going15 (){
+function execute15 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q6a ;
-    going21();
+    execute21();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q7 ;
-    going22();
+    execute22();
   };
 
 }
 
-function going16 (){
+function execute16 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q14 ;
-    going23();
+    execute23();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  S17 ;
@@ -332,7 +332,7 @@ function going16 (){
 
 }
 
-function going17 (){
+function execute17 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S21 ;
     buttonContainer.style.display =`none`;
@@ -347,7 +347,7 @@ function going17 (){
 
 }
 
-function going18 (){
+function execute18 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S23 ;
     buttonContainer.style.display =`none`;
@@ -363,19 +363,19 @@ function going18 (){
 
 }
 
-function going19 (){
+function execute19 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q21 ;
-    going24();
+    execute24();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q23 ;
-    going25();
+    execute25();
   };
 
 }
 
-function going20 (){
+function execute20 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S3 ;
     buttonContainer.style.display =`none`;
@@ -384,12 +384,12 @@ function going20 (){
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q3c ;
-    going26();
+    execute26();
   };
 
 }
 
-function going21 (){
+function execute21 (){
     approvedButton.onclick = function () {
     startButton.textContent = S9 ;
     buttonContainer.style.display =`none`;
@@ -405,19 +405,19 @@ function going21 (){
 
 }
 
-function going22 (){
+function execute22 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q7a ;
-    going27();
+    execute27();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q8 ;
-    going28();
+    execute28();
   };
 
 }
 
-function going23 (){
+function execute23 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S18 ;
     buttonContainer.style.display =`none`;
@@ -433,10 +433,10 @@ function going23 (){
 
 }
 
-function going24 (){
+function execute24 (){
     approvedButton.onclick = function () {
     startButton.textContent = Q22 ;
-    going29();
+    execute29();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  S25 ;
@@ -447,19 +447,19 @@ function going24 (){
 
 }
 
-function going25 (){
+function execute25 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q24 ;
-    going30();
+    execute30();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q26 ;
-    going31();
+    execute31();
   };
 
 }
 
-function going26 (){
+function execute26 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S4 ;
     buttonContainer.style.display =`none`;
@@ -475,7 +475,7 @@ function going26 (){
 
 }
 
-function going27 (){
+function execute27 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S11 ;
     buttonContainer.style.display =`none`;
@@ -491,7 +491,7 @@ function going27 (){
 
 }
 
-function going28 (){
+function execute28 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S13 ;
     buttonContainer.style.display =`none`;
@@ -500,12 +500,12 @@ function going28 (){
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q9 ;
-    going32();
+    execute32();
   };
 
 }
 
-function going29 (){
+function execute29 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S26 ;
     buttonContainer.style.display =`none`;
@@ -521,7 +521,7 @@ function going29 (){
 
 }
 
-function going30 (){
+function execute30 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S28 ;
     buttonContainer.style.display =`none`;
@@ -530,15 +530,15 @@ function going30 (){
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q25 ;
-    going33();
+    execute33();
   };
 
 }
 
-function going31 (){
+function execute31 (){
     approvedButton.onclick = function () {
     startButton.textContent =  Q27 ;
-    going34();
+    execute34();
   };
   deniedButton.onclick = function () {
     startButton.textContent =  S31 ;
@@ -549,7 +549,7 @@ function going31 (){
 
 }
 
-function going32 (){
+function execute32 (){
     approvedButton.onclick = function () {
     startButton.textContent =  S14 ;
     buttonContainer.style.display =`none`;
@@ -558,7 +558,7 @@ function going32 (){
   };
   deniedButton.onclick = function () {
     startButton.textContent =  Q10 ;
-    going2();
+    execute2();
   };
 
 }
